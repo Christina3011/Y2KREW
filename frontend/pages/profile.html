@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My space · Y2KREW</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">Y2KREW<span>✧</span></a>
+    <nav><a href="/">Home</a><a href="/pages/customize.html">Customise my space</a></nav>
+  </header>
+  <main class="single-page profile-page">
+    <div id="profileLoading" class="panel">Loading your space… ♡</div>
+    <section id="profileContent" hidden>
+      <div class="profile-toolbar">
+        <div><p class="eyebrow">YOUR LITTLE CORNER OF THE INTERNET</p><h1>My space ♡</h1></div>
+        <a class="button button-small" href="/pages/customize.html">Edit profile ✧</a>
+      </div>
+      <article id="publicProfile" class="public-profile profile-preview wallpaper-surface wallpaper--leopard-beige">
+        <div class="preview-cover">
+          <img id="profileCover" alt="">
+          <span id="profileStickers" class="preview-stickers" aria-hidden="true"></span>
+        </div>
+        <div class="public-profile-info">
+          <div class="preview-avatar-wrap">
+            <img id="profileAvatar" alt="">
+            <span id="profileAvatarFallback">♡</span>
+          </div>
+          <p class="eyebrow">Y2KREW ICON</p>
+          <h2 id="profileDisplayName"></h2>
+          <p id="profileUsername" class="preview-username"></p>
+          <p id="profileBio" class="preview-bio"></p>
+          <div class="public-profile-details">
+            <div><h2>♪ Favourite music</h2><p id="profileMusic"></p></div>
+            <div><h2>♡ My interests</h2><div id="profileInterests" class="public-interests"></div></div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section id="loginNeeded" class="panel login-needed" hidden>
+      <p class="eyebrow">YOUR SPACE IS WAITING</p>
+      <h1>Log in to see your profile ♡</h1>
+      <p class="muted">Your personalisation is saved to your account.</p>
+      <a class="button" href="/pages/login.html">Log in ✧</a>
+    </section>
+  </main>
+  <footer>made with ♡ and a little internet nostalgia · Y2KREW</footer>
+  <script src="/js/api.js"></script>
+  <script src="/js/profile-view.js"></script>
+</body>
+</html>

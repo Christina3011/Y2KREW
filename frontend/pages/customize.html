@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customise my space · Y2KREW</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body class="customize-page">
+  <div class="announcement">✦ your space, your rules, your era ✦</div>
+  <header class="topbar">
+    <a class="brand" href="/">Y2KREW<span>✧</span></a>
+    <nav><a href="/">Home</a><a href="/pages/profile.html">My profile</a></nav>
+    <a class="button button-small" href="/pages/profile.html">View my space ♡</a>
+  </header>
+
+  <main class="customize-layout">
+    <section class="customize-heading panel">
+      <div>
+        <p class="eyebrow">EDIT PROFILE / CUSTOMISE MY SPACE</p>
+        <h1>Make it <span>so you</span> ✧</h1>
+        <p class="muted">Pick your patterns, add your little details and make this corner of the internet yours.</p>
+      </div>
+      <div class="customize-sparkle" aria-hidden="true">✦</div>
+    </section>
+
+    <div class="customize-columns">
+      <form id="profileForm" class="customize-form">
+        <section class="panel customize-section">
+          <div class="section-title"><span>01</span><div><h2>Choose your wallpaper</h2><p>Tap a swatch to preview it. It won't save until you do.</p></div></div>
+          <div class="wallpaper-gallery" role="group" aria-label="Profile wallpapers">
+            <button type="button" class="wallpaper-option is-selected" data-wallpaper="leopard-beige" aria-pressed="true"><span class="wallpaper-thumb wallpaper--leopard-beige"></span><span>Classic Leopard</span></button>
+            <button type="button" class="wallpaper-option" data-wallpaper="leopard-glitter" aria-pressed="false"><span class="wallpaper-thumb wallpaper--leopard-glitter"></span><span>Glitter Kitty</span></button>
+            <button type="button" class="wallpaper-option" data-wallpaper="leopard-pink" aria-pressed="false"><span class="wallpaper-thumb wallpaper--leopard-pink"></span><span>Pink Panther</span></button>
+            <button type="button" class="wallpaper-option" data-wallpaper="pixel-hearts" aria-pressed="false"><span class="wallpaper-thumb wallpaper--pixel-hearts"></span><span>Pixel Hearts</span></button>
+            <button type="button" class="wallpaper-option" data-wallpaper="chrome-stars" aria-pressed="false"><span class="wallpaper-thumb wallpaper--chrome-stars"></span><span>Chrome Stars</span></button>
+            <button type="button" class="wallpaper-option" data-wallpaper="purple-stars" aria-pressed="false"><span class="wallpaper-thumb wallpaper--purple-stars"></span><span>Midnight Stardust</span></button>
+            <button type="button" class="wallpaper-option" data-wallpaper="pink-waves" aria-pressed="false"><span class="wallpaper-thumb wallpaper--pink-waves"></span><span>Bubblegum Waves</span></button>
+          </div>
+        </section>
+
+        <section class="panel customize-section">
+          <div class="section-title"><span>02</span><div><h2>Your profile details</h2><p>Share a little or a lot — it's your page.</p></div></div>
+          <div class="customize-fields">
+            <label>Username<input id="username" name="username" minlength="3" maxlength="24" required></label>
+            <label>Display name<input id="displayName" name="displayName" maxlength="32" placeholder="What should your friends call you?"></label>
+            <label class="field-wide">Bio<textarea id="bio" name="bio" maxlength="180" rows="3" placeholder="A tiny intro about you..."></textarea></label>
+            <label>Favourite music<input id="favouriteMusic" name="favouriteMusic" maxlength="80" placeholder="Pop punk, R&B, anything ✧"></label>
+            <label>Interests <small>Separate up to 10 with commas</small><input id="interests" name="interests" placeholder="fashion, playlists, stargazing"></label>
+          </div>
+        </section>
+
+        <section class="panel customize-section">
+          <div class="section-title"><span>03</span><div><h2>Pictures & sparkle</h2><p>Personal pics stay on your own profile.</p></div></div>
+          <div class="customize-fields">
+            <label>Profile picture<input id="profilePicture" type="file" accept="image/png,image/jpeg,image/webp,image/gif"><small>JPEG, PNG, GIF or WEBP · max 1 MB</small></label>
+            <label>Cover image<input id="coverImage" type="file" accept="image/png,image/jpeg,image/webp,image/gif"><small>JPEG, PNG, GIF or WEBP · max 1 MB</small></label>
+          </div>
+          <div class="image-remove-actions">
+            <button type="button" class="button button-small button-ghost" id="removeProfilePicture">Remove profile picture</button>
+            <button type="button" class="button button-small button-ghost" id="removeCoverImage">Remove cover image</button>
+          </div>
+          <div class="sticker-picker">
+            <span class="field-label">Add decorations</span>
+            <label><input type="checkbox" name="stickers" value="star"><span>✦ Star</span></label>
+            <label><input type="checkbox" name="stickers" value="heart"><span>♡ Heart</span></label>
+            <label><input type="checkbox" name="stickers" value="butterfly"><span>୨୧ Butterfly</span></label>
+          </div>
+          <div class="accent-picker">
+            <span class="field-label">Profile accent</span>
+            <div class="accent-swatches" role="group" aria-label="Profile accent colour">
+              <button type="button" class="accent-swatch is-selected" data-color="#ff3ea5" style="--swatch:#ff3ea5" aria-label="Hot pink" aria-pressed="true"></button>
+              <button type="button" class="accent-swatch" data-color="#a855f7" style="--swatch:#a855f7" aria-label="Purple" aria-pressed="false"></button>
+              <button type="button" class="accent-swatch" data-color="#35b8c5" style="--swatch:#35b8c5" aria-label="Aqua" aria-pressed="false"></button>
+              <button type="button" class="accent-swatch" data-color="#ff8b38" style="--swatch:#ff8b38" aria-label="Tangerine" aria-pressed="false"></button>
+              <button type="button" class="accent-swatch" data-color="#111111" style="--swatch:#111111" aria-label="Black" aria-pressed="false"></button>
+              <label class="custom-accent">Custom <input id="accentColor" type="color" value="#ff3ea5" aria-label="Choose a custom accent colour"></label>
+            </div>
+          </div>
+        </section>
+
+        <p id="profileMessage" class="feedback" aria-live="polite"></p>
+        <div class="customize-actions">
+          <button type="button" id="resetProfile" class="button button-ghost">Reset unsaved changes</button>
+          <button type="submit" class="button">Save Changes ✧</button>
+        </div>
+      </form>
+
+      <aside class="preview-column">
+        <div class="preview-sticky">
+          <div class="section-title preview-title"><span>✧</span><div><h2>Live preview</h2><p>Your edits appear here instantly.</p></div></div>
+          <article id="profilePreview" class="profile-preview wallpaper-surface wallpaper--leopard-beige">
+            <div class="preview-cover"><img id="previewCover" alt=""><span id="previewStickers" class="preview-stickers" aria-hidden="true"></span></div>
+            <div class="preview-profile-info">
+              <div class="preview-avatar-wrap"><img id="previewAvatar" alt=""><span id="previewAvatarFallback">♡</span></div>
+              <p class="eyebrow">Y2KREW ICON</p>
+              <h2 id="previewDisplayName">Your display name</h2>
+              <p id="previewUsername" class="preview-username">@your_username</p>
+              <p id="previewBio" class="preview-bio">Your bio will live right here ✧</p>
+              <div class="preview-faves"><span>♪ <strong id="previewMusic">Your favourite music</strong></span><span>♡ <strong id="previewInterests">Your interests</strong></span></div>
+            </div>
+          </article>
+          <p class="preview-caption">✦ Changes are only saved when you click <strong>Save Changes</strong>.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <footer>made with ♡ and a little internet nostalgia · Y2KREW</footer>
+  <script src="/js/api.js"></script>
+  <script src="/js/profile.js"></script>
+</body>
+</html>

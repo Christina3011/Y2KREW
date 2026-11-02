@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Y2KREW — your little corner of the internet.">
+  <title>Y2KREW ✧ Your Internet Playground</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="announcement">✦ welcome to your little corner of the internet ✦</div>
+  <header class="topbar">
+    <a class="brand" href="/">Y2KREW<span>✧</span></a>
+    <nav>
+      <a class="active" href="#home">Home</a>
+      <a href="#explore">Explore</a>
+      <a href="#boards">Boards</a>
+      <a href="#capsules">Time capsules</a>
+    </nav>
+    <div class="top-actions">
+      <span class="online-dot"></span><span class="online-label">online</span>
+      <a class="button button-small" id="homeAuthLink" href="/pages/login.html">Log in</a>
+      <a class="button button-small" href="/pages/customize.html">Customise</a>
+    </div>
+  </header>
+
+  <main class="layout" id="home">
+    <aside class="sidebar panel">
+      <div class="profile-mini">
+        <div class="avatar" id="homeAvatar">♡</div>
+        <h3 id="homeUsername">your_username</h3>
+        <p class="muted" id="homeBio">living in my own little world</p>
+        <span class="status-pill">✦ currently online</span>
+      </div>
+      <div class="side-links">
+        <a class="selected" href="#home">⌂ &nbsp; My space</a>
+        <a href="#feed">♡ &nbsp; Friend feed</a>
+        <a href="#boards">▧ &nbsp; My moodboards</a>
+        <a href="#capsules">✉ &nbsp; Time capsules</a>
+        <a href="/pages/profile.html">☻ &nbsp; My profile</a>
+        <a href="/pages/customize.html">✧ &nbsp; Customise my space</a>
+      </div>
+      <div class="mini-note">
+        <strong>♪ currently playing</strong>
+        <p id="homeMusic">Complicated — Avril Lavigne</p>
+        <span>♫ ♫ ♫ ♫ ♫</span>
+      </div>
+    </aside>
+
+    <section class="main-column">
+      <section class="welcome panel">
+        <div>
+          <p class="eyebrow">MONDAY, NOVEMBER 02, 2026</p>
+          <h1>Hey, internet bestie! <span>✿</span></h1>
+          <p class="muted">A little place to share your world and save your memories.</p>
+        </div>
+        <div class="sparkle">✧</div>
+      </section>
+
+      <section class="composer panel">
+        <h2>What's happening in your world?</h2>
+        <textarea id="postText" placeholder="Tell your friends something..."></textarea>
+        <div class="composer-footer">
+          <span class="muted">♡ share a thought, memory or tiny life update</span>
+          <button class="button" id="sharePost">Post it ✧</button>
+        </div>
+        <p id="postMessage" class="feedback" aria-live="polite"></p>
+      </section>
+
+      <section id="feed">
+        <div class="section-heading"><h2>The latest from your people</h2><a href="#explore">see all →</a></div>
+        <div id="postFeed" class="feed-list">
+          <article class="post panel">
+            <div class="post-author"><div class="avatar avatar-blue">☆</div><div><strong>pixel.dreamer</strong><small>12 minutes ago · Coimbatore</small></div></div>
+            <p>Found my old digital camera and now I want to document EVERYTHING. life is a scrapbook ♡</p>
+            <div class="post-actions"><button class="text-button">♡ Like</button><button class="text-button">○ Comment</button><span>♡ 24</span></div>
+          </article>
+          <article class="post panel">
+            <div class="post-author"><div class="avatar avatar-purple">✿</div><div><strong>starry_skies</strong><small>1 hour ago</small></div></div>
+            <p>Today's tiny reminder: you're allowed to start over as many times as you need. ✧</p>
+            <div class="post-actions"><button class="text-button">♡ Like</button><button class="text-button">○ Comment</button><span>♡ 18</span></div>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <aside class="right-column">
+      <section class="panel widget" id="capsules">
+        <div class="widget-icon">✉</div>
+        <p class="eyebrow">A NOTE TO YOUR FUTURE SELF</p>
+        <h2>Time capsule</h2>
+        <p class="muted">Save a little piece of today for tomorrow.</p>
+        <a class="button button-full" href="/pages/capsules.html">Create a capsule</a>
+      </section>
+      <section class="panel widget" id="boards">
+        <p class="eyebrow">YOUR LITTLE COLLECTIONS</p>
+        <h2>Moodboards</h2>
+        <div class="board-preview"><span>☁</span><div><strong>dream life</strong><small>12 saved things</small></div></div>
+        <div class="board-preview pink"><span>♡</span><div><strong>songs & feelings</strong><small>8 saved things</small></div></div>
+        <a class="inline-link" href="/pages/boards.html">Explore your boards →</a>
+      </section>
+      <section class="panel widget">
+        <p class="eyebrow">DAILY QUESTION</p>
+        <h2>Today's little prompt</h2>
+        <p>What song feels like the current chapter of your life?</p>
+        <a class="inline-link" href="#composer">Answer on your feed →</a>
+      </section>
+    </aside>
+  </main>
+  <footer>made with ♡ and a little internet nostalgia · Y2KREW</footer>
+  <script src="/js/api.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/space.js"></script>
+</body>
+</html>
